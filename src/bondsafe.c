@@ -2,19 +2,8 @@
 
 int dev_id = -1;
 int sock = 0;
-char *valid_prefixes[PREFIX_COUNT] = {"cmd:", "umt:","del:"};
 
 
-bool valid_arg_command(char* strn) { 
-	int i = 0;
-	if (strnlen(strn,4) < 4)
-		return false;
-	for(i = 0;i < PREFIX_COUNT;i++) { 
-		if(0 == strncmp(strn,valid_prefixes[i], PREFIX_LENGTH))
-			return true;
-	}
-	return false;
-}
 
 bool scan_query() {
     inquiry_info *ii = NULL;

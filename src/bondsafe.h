@@ -1,3 +1,6 @@
+#ifndef __BONDSAFE_H__
+#define __BONDSAFE_H__
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <bluetooth/bluetooth.h>
@@ -8,8 +11,18 @@
 #include <unistd.h>
 #include "util.h"
 
-#define PREFIX_COUNT 3
-#define PREFIX_LENGTH 4
 #define OK_ERROR 0 
 #define BAD_ARGS_ERROR 1
 
+
+
+// Returns the default device for now
+int get_device();
+
+// checks the arguments we get from the user
+bool validate_args(int argc, char** argv);
+
+
+int main(int argc, char** argv);
+
+#endif
