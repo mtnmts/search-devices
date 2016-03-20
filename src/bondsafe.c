@@ -2,7 +2,7 @@
 
 int dev_id = -1;
 int sock = 0;
-
+char* bond_mac_addr = NULL;
 
 
 bool scan_query() {
