@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define MAC_ADDR_LEN 17
 #define PREFIX_COUNT 3 
 #define PREFIX_LENGTH 4 
 
