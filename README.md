@@ -23,7 +23,7 @@ Future usage will be something like
 > make all
 
 # Requirements
-> GCC
-> libbluetooth-devel (debian/ubuntu? I think?)
-> bluez-libs (Fedora)
-> bluez-libs-devel (Fedora)
+> * GCC
+> * libbluetooth-devel (debian/ubuntu? I think?)
+> * bluez-libs (Fedora)
+> * bluez-libs-devel (Fedora)
