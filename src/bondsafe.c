@@ -1,7 +1,7 @@
 #include "bondsafe.h"
 
 
-bool scan_query(int dev_id, char* bond_mac_addr, int time_sec_ish) {
+bool bt_scan_query(int dev_id, char* bond_mac_addr, int time_sec_ish) {
     inquiry_info *ii = NULL;
     int max_rsp, num_rsp;
     int sock, len, flags;
@@ -66,7 +66,7 @@ void scan_loop(char* bond_mac_addr, int limit_scans) {
     int dev_id = get_device();
     int stop_count = 0;
     while(stop_count < limit_scans) {
-	if(true == scan_query(dev_id, bond_mac_addr, 15))
+	if(true == bt_scan_query(dev_id, bond_mac_addr, 15))
 		stop_count = 0;
 	else{
 		stop_count++;

@@ -27,3 +27,9 @@ Future usage will be something like
 > * libbluetooth-devel (debian/ubuntu? I think?)
 > * bluez-libs (Fedora)
 > * bluez-libs-devel (Fedora)
+
+# TODO
+
+* Actual command execution
+* Support MAC's and Friendly names
+* Support WiFi
